@@ -1,5 +1,11 @@
 class Person {
-  // write code here
+  #id;
+  constructor() {
+    this.#id = Math.random();
+  }
+  get getID() {
+    return Number(this.#id);
+  }
 }
 
 module.exports = Person;
